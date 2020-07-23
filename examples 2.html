@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>Cole's website</title>
+		<link rel="stylesheet" href="stylesheet.css">
+	</head>
+	<body>
+		<h1 class="header">Hello world!</h1>
+		
+		<p><a class="header" href="#next-header">link to the next header</p>
+		<p><a class="table" href="#table">link to tables</p>
+		
+		<!--ordered list-->
+		<ol id="goals">
+			<li>learn html, css, and javascript</li>
+			<li>build my first webpage</li>
+			<li>add headers and different pages</li>
+			<li>add css</li>
+			<li>publish</li>
+			<li>make dynamic for different browsers and devices</li>
+		</ol>
+		<!-- src="URL" alt="text to describe picture"-->
+		<img id="first_image" src="" alt="">
+		
+		<!--target="_blank opens the document in a new window" href="URL"-->
+		<a target="_blank" href="https://www.w3schools.com/tags/att_a_target.asp">Link to something</a>
+		
+		<h2 id="next-header">the next header</h2>
+		
+		<!-- tables-->
+		<h2 id="tables">Tables</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>pet name</th>
+					<th>species</th>
+					<th>color</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>angus</td>
+					<td>dog</td>
+					<td>black</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<img id="crocs" src="https://www.kasandbox.org/programming-images/animals/crocodiles.png" width="300" alt="Crocodiles chilling">
+		<div id="results"></div>
+
+		<script>
+			console.log("Hello world!");
+
+			var tablesElement = document.getElementById("tables");
+			console.log(tablesElement); //crtl+ shift + i
+
+			var tagname = document.getElementsByTagName("h2");
+			console.log(tagname);
+
+			var classname = document.getElementsByClassName("table");
+			console.log(classname);
+
+			var imageEl = document.getElementsByTagName("img");
+			for (var i = 0; i < imageEl.length; i++) {
+				imageEl[i].src = "";
+			}
+
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+		var numClicks = 0;
+		
+		$("#crocs").on("click", function() {
+			//console.log("adsad");
+			numClicks += 1;
+			$("#results").text("You clicked " + numClicks + " times");
+		});
+		</script>
+	</body>
+</html>

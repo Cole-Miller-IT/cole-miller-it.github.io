@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+		<title>Cole's Webpage</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+		<!--Header-->
+		<div class="header">
+			<h1>A wild header appeared</h1>
+			<p>A paragraph inside of a header class.</p>
+		</div>
+
+		<!--Navigation bar-->
+        <nav class="nav-bar-blue">
+            <a href="index.html" class="nav-bar-item">Home</a>
+            <a href="" class="nav-bar-item">Certifications</a>
+			<a href="projects.html" class="nav-bar-item">Projects</a>
+			<a href="examples 2.html" class="nav-bar-item">Test_Page</a>
+			<a href="references.html" class="nav-bar-item">References</a>
+			<!--<input type="text" id="" placeholder="search">-->
+		</nav>
+
+		<!--Container-->
+		<div class="container">
+			<!--Left side-->
+			<div class="side"></div>
+			<!--Middle-->
+			<div class="middle">
+				<h2>About me</h2>
+				<p>I am a recent graduate from Sir Sandford Fleming College, Peterborough campus. While there I 
+					studied Computer Engineering Technology. Some of the courses I took were 
+				</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+				<p>Some text some text some text some text..</p>
+			</div>
+			<!--Right side-->
+			<div class="side"></div>
+		</div>
+
+		<!--Slideshow container-->
+		<div class="slideshow-container">
+			<!--Slides-->
+			<div class="slides">
+				<div class="slide-number">1</div>
+				<img src="image1.png">
+				<div class="slide-caption">hey</div>
+			</div>
+			<div class="slides">
+				<div class="slide-number">2</div>
+				<img src="image2.jpg">
+				<div class="slide-caption">ere</div>
+			</div>
+			<div class="slides">
+				<div class="slide-number">3</div>
+				<img src="image3.jpg">
+				<div class="slide-caption">ter</div>
+			</div>
+
+			<!--Next/previous slideshow buttons-->
+			<a class="prev" onclick="plusSlides(-1)">prev</a>
+			<a class="next"onclick="plusSlides(1)">next</a>
+		</div>
+		
+		<!--Footer-->
+		<div class="footer">
+			<p>footer</p>
+		</div>
+
+		<!--Sticky navbar-->
+		<script>
+			//When the user scrolls the page execute myFunction
+			window.onscroll = function() {myFunction()};
+
+			var collection = document.getElementsByClassName("nav-bar-blue"); //Gets the HTML collection of the navbar
+			var navbar = collection[0];	//
+			var sticky = navbar.offsetTop;	//Get the numeric value of how far the navbar is offset from the top of the page
+			
+			//The function adds/removes the sticky class to the navbar
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky");
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+			/*console.log(collection);
+			console.log(navbar);
+			console.log(sticky);*/
+		</script>
+
+		<!--Slideshow-->
+		<script>
+			var slideIndex = 1;		//Sets the current index to the first slide
+			showSlides(slideIndex);	//Declare the function
+			
+			//Increments/decrements the current slide index based on if the user clicks on the next or previous button
+			function plusSlides(n) {
+				showSlides(slideIndex += n); //slideIndex = 1, clicked "next" slideIndex == slideIndex + 1, slideIndex == 2
+			}
+
+			//Displays the current image based on the slideIndex
+			function showSlides(n) {
+				var slides = document.getElementsByClassName("slides"); //Returns the HTML collection for the slides class
+				//
+				if (n > slides.length) {
+					slideIndex = 1;
+				}
+				//
+				if (n < 1) {
+					slideIndex = slides.length;
+				}
+				//
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				
+				slides[slideIndex - 1].style.display = "block";
+				console.log(slides);
+			}
+		</script>
+    </body>
+</html>

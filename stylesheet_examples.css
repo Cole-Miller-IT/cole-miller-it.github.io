@@ -1,0 +1,24 @@
+/* # == id, . == class */
+h1, h2 {
+	color: blue;
+}
+ol {
+	color: rgb(0,232,15);
+	width: 70%;
+}
+#goals {
+	background-color: red;
+}
+#first_image {
+	width: 100px;
+	height: 150px;
+}
+.header {
+	background-color: yellow;
+}
+a.header {
+	color: green;
+}
+p a .header{
+	background-color: aliceblue;
+}

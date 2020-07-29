@@ -18,22 +18,29 @@
             <a href="index.html" class="nav-bar-item">Home</a>
             <a href="" class="nav-bar-item">Certifications</a>
 			<a href="projects.html" class="nav-bar-item">Projects</a>
-			<a href="examples 2.html" class="nav-bar-item">Test_Page</a>
-			<a href="references.html" class="nav-bar-item">References</a>
+			<a href="examples 2.html" class="nav-bar-item">Resume</a>
 			<!--<input type="text" id="" placeholder="search">-->
 		</nav>
 
 		<!--Container-->
 		<div class="container">
 			<!--Left side-->
-			<div class="side"></div>
+			<div class="side">
+				<h2>About me</h2>
+				<p>I am a recent graduate from Sir Sandford Fleming College. While there I 
+					studied Computer Engineering Technology.
+				</p>
+				<a href="https://ca.linkedin.com/" title="LinkedIn">
+					<img src="Images\HyperLinks_footer\LinkedIn.png" alt="LinkedIn Logo" class="footer-link">
+				</a>
+			</div>
 			<!--Middle-->
 			<div class="middle">
-				<h2>About me</h2>
-				<p>I am a recent graduate from Sir Sandford Fleming College, Peterborough campus. While there I 
-					studied Computer Engineering Technology. Some of the courses I took were 
+				<h2>Purpose of the website</h2>
+				<p>This website serves as an online portfolio for me, showing off projects and certifications
+					that I have worked on or completed. July 29, 2020
 				</p>
-				<p>Some text some text some text some text..</p>
+
 				<p>Some text some text some text some text..</p>
 				<p>Some text some text some text some text..</p>
 				<p>Some text some text some text some text..</p>
@@ -73,38 +80,13 @@
 				<p>Some text some text some text some text..</p>
 				<p>Some text some text some text some text..</p>
 			</div>
-			<!--Right side-->
-			<div class="side"></div>
 		</div>
 
-		<!--Slideshow container
-		<div class="slideshow-container">
-			Slides
-			<div class="slides">
-				<div class="slide-number">1</div>
-				<img src="image1.png">
-				<div class="slide-caption">hey</div>
-			</div>
-			<div class="slides">
-				<div class="slide-number">2</div>
-				<img src="image2.jpg">
-				<div class="slide-caption">ere</div>
-			</div>
-			<div class="slides">
-				<div class="slide-number">3</div>
-				<img src="image3.jpg">
-				<div class="slide-caption">ter</div>
-			</div>
-
-			Next/previous slideshow buttons
-			<a class="prev" onclick="plusSlides(-1)">prev</a>
-			<a class="next"onclick="plusSlides(1)">next</a>
-		</div>-->
 
 		<!--Footer-->
 		<div class="footer">
 			<!--change to my LInkedIn later-->
-			<a href="https://ca.linkedin.com/" title="LinkedIn">LinkedIn</a>
+			<img src="Images\HyperLinks_footer\LinkedIn.png" alt="LinkedIn Logo" class="footer-link">
 		</div>
 
 		<!--Sticky navbar-->
@@ -123,40 +105,6 @@
 				} else {
 					navbar.classList.remove("sticky");
 				}
-			}
-			/*console.log(collection);
-			console.log(navbar);
-			console.log(sticky);*/
-		</script>
-
-		<!--Slideshow-->
-		<script>
-			var slideIndex = 1;		//Sets the current index to the first slide
-			showSlides(slideIndex);	//Declare the function
-			
-			//Increments/decrements the current slide index based on if the user clicks on the next or previous button
-			function plusSlides(n) {
-				showSlides(slideIndex += n); //slideIndex = 1, clicked "next" slideIndex == slideIndex + 1, slideIndex == 2
-			}
-
-			//Displays the current image based on the slideIndex
-			function showSlides(n) {
-				var slides = document.getElementsByClassName("slides"); //Returns the HTML collection for the slides class
-				//
-				if (n > slides.length) {
-					slideIndex = 1;
-				}
-				//
-				if (n < 1) {
-					slideIndex = slides.length;
-				}
-				//
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";
-				}
-				
-				slides[slideIndex - 1].style.display = "block";
-				console.log(slides);
 			}
 		</script>
     </body>

@@ -17,12 +17,11 @@ body {
 }
 .nav-bar-blue a {
 	float: left;
-	width: 20%;
 	text-align: center;
 	padding: 12px;
 }
 .nav-bar-blue a:hover {
-	background-color: darkgray;
+	background-color: gray;
 }
 .sticky {
 	position: fixed;
@@ -30,7 +29,7 @@ body {
 }
 /*header*/
 .header {
-	background-color: rgb(0, 217, 255);
+	background-color: white;
 	text-align: center;
 	padding: 80px;
 }
@@ -47,15 +46,12 @@ body {
 	flex-wrap: wrap;
 }
 .side {
-	flex: 25%;
-	background-color: gray;
+	flex: 30%;
+	background-color: white;
 	padding: 20px;
 }
-.side #left-side {
-	background-color: red;
-}
 .middle {
-	flex: 50%;
+	flex: 70%;
 	background-color: white;
 	padding: 20px;
 }
@@ -63,9 +59,22 @@ body {
 .footer {
 	color: black;
 	text-align: center;
-	background-color: darkgray;
+	background-color: white;
 	padding: 40px;
 }
+.footer-link {
+	height: 30px;
+	width: 30px;
+}
+
+/*Responsive layout*/
+/*stacks left column on top of rigth column if the screen size is reduced*/
+@media screen and (max-width: 700px) {
+	.container {
+		flex-direction: column;
+	}
+}
+
 
 
 

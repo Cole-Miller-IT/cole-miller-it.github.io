@@ -3,11 +3,18 @@
 "." == class 
 */
 /*navigation*/
+/*Colors
+#e06a82
+#d5a1ad
+#e3e3e1
+#f7f7f5
+#a6c9cf
+*/
 body {
 	margin: 0;
 }
 .nav-bar-blue {
-	background-color: black;
+	background-color: #d5a1ad;
 	margin: 0;
 	width: 100%;
 	overflow: auto;
@@ -29,13 +36,14 @@ body {
 }
 /*header*/
 .header {
-	background-color: white;
+	background-color: #a6c9cf;
 	text-align: center;
-	padding: 80px;
+	position: relative;
+	overflow: hidden;
+	height: 250px;
 }
-/*Selects all h2's with a parent class equal to "header"*/
-.header > h2 {
-	color: white;
+.header * {
+	color:#f7f7f5;
 }
 /*Container*/
 * {

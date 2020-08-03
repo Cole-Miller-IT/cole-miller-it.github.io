@@ -14,10 +14,11 @@ body {
 	margin: 0;
 }
 .nav-bar-blue {
-	background-color: #d5a1ad;
+	background-color: #db8412;
 	margin: 0;
 	width: 100%;
 	overflow: auto;
+	z-index: 2;
 }
 .nav-bar-item {
 	color: white;
@@ -36,15 +37,28 @@ body {
 }
 /*header*/
 .header {
-	background-color: #a6c9cf;
-	text-align: center;
+	/*background-color: #a6c9cf;*/
 	position: relative;
+	top: 42px;
 	overflow: hidden;
-	height: 250px;
+	height: 930px;
+	background-image: url(Images/Header.jpg);
+	background-position: center;
+	z-index: 1;
 }
-.header * {
-	color:#f7f7f5;
+.header h1, h2, p {
+	position: relative;
+	left: 0;
+	top: 100;
+	bottom: 50;
+	
+	padding-left: 2%;
+	color:black;
 }
+.header h1, h2 {
+	font-size: 40px;
+}
+
 /*Container*/
 * {
 	box-sizing: border-box;

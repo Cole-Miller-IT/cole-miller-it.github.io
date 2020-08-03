@@ -7,20 +7,23 @@
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-		<!--Header-->
-		<div class="header">
-			<h1>My Website</h1>
-			<h2>Website by Cole Miller</h2>
-		</div>
-
 		<!--Navigation bar-->
-        <nav class="nav-bar-blue">
+        <nav class="nav-bar-blue sticky">
             <a href="index.html" class="nav-bar-item">Home</a>
             <a href="" class="nav-bar-item">Certifications</a>
 			<a href="projects.html" class="nav-bar-item">Projects</a>
 			<a href="examples 2.html" class="nav-bar-item">Resume</a>
 			<!--<input type="text" id="" placeholder="search">-->
 		</nav>
+
+		<!--Header-->
+		<div class="header">
+			<h1>My Website</h1>
+			<h2>Website by Cole Miller</h2>
+			<p>Image courtesy of
+			<a href="https://unsplash.com/@fabulu75" title="Unsplash">
+				Fabrice Villard</a>.</p>
+		</div>
 
 		<!--Container-->
 		<div class="container">
@@ -90,24 +93,5 @@
 				<img src="Images\HyperLinks_footer\LinkedIn.png" alt="LinkedIn Logo" class="footer-link">
 			</a>
 		</div>
-
-		<!--Sticky navbar-->
-		<script>
-			//When the user scrolls the page execute myFunction
-			window.onscroll = function() {myFunction()};
-
-			var collection = document.getElementsByClassName("nav-bar-blue"); //Gets the HTML collection of the navbar
-			var navbar = collection[0];	//
-			var sticky = navbar.offsetTop;	//Get the numeric value of how far the navbar is offset from the top of the page
-			
-			//The function adds/removes the sticky class to the navbar
-			function myFunction() {
-				if (window.pageYOffset >= sticky) {
-					navbar.classList.add("sticky");
-				} else {
-					navbar.classList.remove("sticky");
-				}
-			}
-		</script>
     </body>
 </html>
